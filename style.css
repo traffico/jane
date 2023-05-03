@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100&display=swap');
+body, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgba(245, 222, 179, 0.301);
+}
+
+#jane-blog{
+    background-color: white;
+    padding-bottom: 70px;
+    width: 1600px;
+    margin: auto;
+    padding-left: 52px;
+}
+
+#jane-title{
+    padding-top: 91px;
+    margin-bottom: 22px;
+    font-size: 39px;
+    margin: auto;
+    
+}
+
+#welcome-paragraph{
+    /* align-items: center; */
+    margin: auto;
+}
+
+#fashion-background{
+    width: 1600px;
+    margin: auto;
+    background: url(./jane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100px; */
+    color: white;
+    padding-bottom: 900px;
+    background-position: center;
+    position: relative;
+}
+
+#subscribe-btn{
+    padding: 22px;
+    background-color: gray;
+    font-weight: 700;
+    /* color: white; */
+    border: none;
+}
+
+#subscribe-btn:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+#subscribe-pop{
+    width: 1000px;
+    background-color: white;
+    color: black;
+    margin: auto;
+    /* position: absolute; */
+    position: sticky;
+    padding: 60px;
+    line-height: 40px;
+    display: none;
+    justify-content: center;
+}
+
+#closebtn{
+    float: right;
+    font-size: 22px;
+    padding: 1px 13px;
+    border: none;
+}
+
+#closebtn:hover{
+    border: solid 1px;
+}
+
+#subscribe-pop-btn{
+    padding: 12px;
+    font-size: 17px;
+    border: none;
+    background-color: rgba(217, 77, 77, 0.835);
+    color: white;
+    margin-top: 17px;
+}
+
+#subscribe-pop-btn:hover{
+    background-color: rgba(204, 171, 171, 0.705);
+    cursor: pointer;
+}
+
+#enter-email{
+    border: solid 1px rgba(0, 0, 0, 0.329);
+    margin-bottom: 12px;
+    line-height: 32px;
+    padding-left: 6px;
+}
+
+#fashion-blog{
+    font-size: 73px;
+    margin-bottom: 33px;
+}
+
+#janes{
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+#container{
+    width: 1600px;
+    margin: auto;
+    padding: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 22px;
+}
+
+#container-one{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+
+#title-heading-one, #title-heading-two, #title-heading-three{
+    background-color: white;
+    padding: 23px;
+}
+
+#title-paragraph-one{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+#response{
+    margin-bottom: 23px;
+    
+}
+
+#message, #message3{
+    display: none;
+}
+
+#message-one-section{
+    display: none;
+    /* display: none; */
+}
+
+#flex{
+    display: flex;
+    gap: 33px;
+    border-top: solid 1px rgba(0, 0, 0, 0.351);
+    padding: 19px;
+}
+
+#like, #like2, #like3{
+    padding: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.464);
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+#like:hover, #like2:hover, #like3:hover{
+    background-color: rgba(128, 128, 128, 0.555);
+    border: none;
+    padding: 11px;
+}
+
+#replies-one:hover, #replies-two:hover, #replies-three:hover{
+    background-color: rgba(128, 128, 128, 0.555);
+    color: black;
+    border: none;
+    padding: 13px;
+}
+
+#replies-one, #replies-two, #replies-three{
+    float: right;
+    padding: 11px; 
+    background-color: black;
+    color: white;
+}
+
+#container-two{
+    margin-top: 25px;
+    width: 22%;
+    align-items: center;
+}
+
+#popular-posts-section{
+    width: 100%;
+    margin-top: 22px;
+    background-color: white;
+}
+
+#hover:hover{
+    background-color: rgba(128, 128, 128, 0.318);
+}
+
+@media (max-width: 1305px) {
+    /* body{
+        background-color: red;
+    } */
+    #container{
+        width: 100%;
+        margin: auto;
+    }
+    #fashion-background{
+        width: 100%;
+    }
+    #container-two{
+        width: 100%;
+    }
+    #jane-blog{
+        width: 100%;
+    }
+    #subscribe-pop{
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    /* body{
+        background-color: red;
+    } */
+    #container{
+        flex-direction: column;
+        
+    }
+
+    #container-one{
+        width: 100%;
+    }
+    
+    #popular-posts-section{
+        width: 100%;
+        margin-left: auto;
+    }
+
+    #container-two-1{
+        width: 100%;
+        
+    }
+    #fashion-background{
+        width: 100%;
+    }
+    #container-two{
+        width: 100%;
+    }
+    #jane-blog{
+        width: 100%;
+    }
+    #subscribe-pop{
+        width: 80%;
+    }
+}
